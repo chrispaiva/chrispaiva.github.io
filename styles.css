@@ -57,8 +57,32 @@ body {
 	max-width: 1400px;
 }
 
+.section-header {
+	font-size: 36px;
+	font-weight: 400;
+	margin-bottom: 30px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+}
+.section-header:before {
+	content: "-";
+	display: block;
+	height: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 50%;
+}
+.section-header span {
+	padding: 0 15px;
+	position: relative;
+}
+
 .navigation nav {
 	background: #1d1d1d;
+	border-bottom: 1px solid #aaa;
 	-webkit-box-shadow: 0px 5px 5px 0px rgba(100,100,100,0.5);
 	-moz-box-shadow: 0px 5px 5px 0px rgba(100,100,100,0.5);
 	box-shadow: 0px 5px 5px 0px rgba(100,100,100,0.5);
@@ -66,9 +90,12 @@ body {
 	z-index: 10;
 }
 .navigation nav > div {
-	height: 90px;
+	height: 89px;
 	margin: 0 auto;
 	width: 960px;
+}
+.navigation nav.small-menu > div {
+	height: 59px;
 }
 
 .intro {
@@ -83,30 +110,58 @@ body {
 
 .portfolio {
 	margin: 0 auto;
-	padding: 15px 0;
+	padding: 20px 0 10px;
 	width: 960px;
 }
-.portfolio h3 {
-	font-size: 36px;
-	font-weight: 400;
-	margin-bottom: 15px;
-	position: relative;
-	text-align: center;
-	text-transform: uppercase;
-}
-.portfolio h3:before {
+.portfolio .section-header:before {
 	border-top: 1px solid #eee;
-	content: "-";
-	display: block;
-	height: 1px;
-	left: 0;
-	overflow: hidden;
-	position: absolute;
-	right: 0;
-	top: 50%;
+	border-bottom: 1px solid #e1e1e1;
 }
-.portfolio h3 span {
+.portfolio .section-header span {
 	background: #1d1d1d;
-	padding: 0 15px;
-	position: relative;
+}
+.portfolio .item {
+	font-size: 18px;
+	overflow: hidden;
+	padding-bottom: 50px;
+}
+.portfolio .item img {
+	border: 1px solid #ccc;
+	float: left;
+	margin-right: 20px;
+}
+.portfolio .item h5 {
+	padding: 25px 0 10px;
+}
+.portfolio .item ul {
+	overflow: hidden;
+}
+.portfolio .item li {
+	background: #0a7fca;
+	float: left;
+	margin: 0 20px 15px 0;
+	padding: 5px;
+}
+.portfolio .item li:before {
+	content: "\2714";
+	padding-right: 5px;
+}
+
+.skills {
+	background: #f4f4f4;
+	padding: 25px 0;
+}
+.skills > div {
+	margin: 0 auto;
+	width: 960px;
+}
+.skills .section-header {
+	color: #aaa;
+}
+.skills .section-header:before {
+	border-top: 1px solid #bebebe;
+	border-bottom: 1px solid #c9c9c9;
+}
+.skills .section-header span {
+	background: #f4f4f4;
 }
