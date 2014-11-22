@@ -90,7 +90,7 @@ body {
 	z-index: 10;
 }
 .navigation nav div {
-	background: url(images/nav-bg.png) no-repeat 195px 100%;
+	/*background: url(images/nav-bg.png) no-repeat 195px 100%;*/
 	height: 89px;
 	margin: 0 auto;
 	width: 960px;
@@ -170,12 +170,43 @@ body {
 .portfolio .item {
 	font-size: 18px;
 	overflow: hidden;
-	padding-bottom: 50px;
+	padding: 0 30px 50px;
 }
-.portfolio .item img {
+.portfolio .item a:first-child {
+	background: transparent no-repeat 0 -575px;
 	border: 1px solid #ccc;
 	float: left;
-	margin-right: 20px;
+	height: 225px;
+	margin: 0 20px 50px 0;
+	outline-width: 0;
+	overflow: hidden;
+	text-indent: -5000px;
+	width: 350px;
+}
+.portfolio .item h4 {
+	font-size: 24px;
+	font-weight: 700;
+	padding-bottom: 3px;
+	text-transform: uppercase;
+}
+.portfolio .item h4 span {
+	color: #ca0a60;
+}
+.portfolio .item p {
+	font-size: 18px;
+}
+.portfolio .item p:nth-of-type(2) {
+	padding: 25px 0;
+}
+.portfolio .item .download {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAUCAMAAABYi/ZGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QTQ4RjlERUY2QUMzMTFFNEI4RjY4NDgwRTg2NkM4QUYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QTQ4RjlERjA2QUMzMTFFNEI4RjY4NDgwRTg2NkM4QUYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBNDhGOURFRDZBQzMxMUU0QjhGNjg0ODBFODY2QzhBRiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBNDhGOURFRTZBQzMxMUU0QjhGNjg0ODBFODY2QzhBRiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Ptgudb0AAAC3UExURR0dHf///9/f32hoaMDAwNnZ2V5eXj4+Pufn50BAQNbW1o2NjS0tLY6OjiwsLB4eHqenp5aWlmlpacrKyo+Pj2JiYtra2uTk5F9fX1BQUFdXVyEhISkpKezs7Pf399zc3JSUlDQ0NCIiIujo6C4uLuLi4j8/Px8fH9jY2NXV1WdnZ7GxsTExMUhISGtraysrK7e3t1paWlRUVHR0dL6+vszMzMTExNfX19TU1DAwMMPDw+np6fPz80lpklMAAACPSURBVHjanM3FFsIwEIXhmUIhUMFdirsXb9//uYiclEkXLPh3+c5NAiDqRlPG2GALpDbK7tRyyrL/2FnZVZ93L7+/UfY++u7Y5RYGzXVLWbyyrVOH26SCpPl+KW97Xyrm9ZOOJruQfFvy0qtkSVZyWUd8GCvR6LlIE/Rm8LtGNUM7XLgN0azG7WaZleEjwAAWpghb+2iPAgAAAABJRU5ErkJggg==) no-repeat 0 50%;
+	color: #ccc;
+	display: inline-block;
+	margin: 10px 0;
+	padding: 3px 0 3px 25px;
+}
+.portfolio .item .download:hover {
+	color: #fff;
 }
 .portfolio .item h5 {
 	padding: 25px 0 10px;
