@@ -3,7 +3,7 @@ $(document).ready(function($) {
 	var tween;
 
 	new ScrollScene({offset: 0})
-		.setPin("#pin1")
+		.setPin(".navigation nav")
 		.addTo(controller);
 
 	tween = TweenMax.staggerFrom(".item1 ul li", 2, {scale:0.5, opacity:0, delay:0.5, ease:Elastic.easeOut, force3D:true}, 0.2);
@@ -15,4 +15,28 @@ $(document).ready(function($) {
 	new ScrollScene({offset: 400, duration: 700})
 		.setTween(tween)
 		.addTo(controller);
+
+	/*
+	new ScrollScene({offset: 1330, duration: 1070})
+		.setPin(".skills .section-header", {pushFollowers: false})
+		.addTo(controller);
+	*/
+
+	new ScrollScene({offset: 1370, duration: 1050})
+		.setPin(".skills h4", {pushFollowers: false})
+		.addTo(controller);
+
+	tween = TweenMax.staggerFrom(".skills .bubbles li img", 10, {scale:0.3, opacity:0.8, delay:0.5, ease:Bounce.easeOut, force3D:true}, 10);
+	new ScrollScene({offset: 900, duration: 1500})
+		.setTween(tween)
+		.addTo(controller);
+
+	tween = TweenMax.staggerFrom(".skills .bubbles li p", 10, {css:{alpha: 0.1}}, 10);
+	new ScrollScene({offset: 900, duration: 1500})
+		.setTween(tween)
+		.addTo(controller);
+
+	var $mail = $(".contact ul li span");
+	var email = $mail.text() + '@gmail.com';
+	$mail.replaceWith('<a href="mailto:' + email + '">' + email + '</a>');
 });
