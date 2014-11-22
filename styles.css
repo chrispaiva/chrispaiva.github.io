@@ -89,13 +89,42 @@ body {
 	position: relative;
 	z-index: 10;
 }
-.navigation nav > div {
+.navigation nav div {
+	background: url(images/nav-bg.png) no-repeat 195px 100%;
 	height: 89px;
 	margin: 0 auto;
 	width: 960px;
 }
-.navigation nav.small-menu > div {
-	height: 59px;
+.navigation nav div > a {
+	color: #fff;
+	float: left;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 86px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.navigation nav div > a strong {
+	color: #ca0a60;
+	margin-right: -10px;
+}
+.navigation nav ul {
+	float: right;
+}
+.navigation nav ul li {
+	display: inline;
+}
+.navigation nav ul a {
+	color: #eee;
+	float: left;
+	line-height: 86px;
+	padding: 0 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.navigation nav ul a:hover {
+	color: #fff;
+	text-decoration: underline;
 }
 
 .intro {
@@ -103,9 +132,27 @@ body {
 }
 .intro > div {
 	background: url(images/chris-paiva-black-white.jpg) no-repeat 250px 0;
+	color: #111;
+	font-size: 60px;
 	height: 585px;
 	margin: 0 auto;
 	width: 960px;
+}
+.intro strong {
+	color: #ca0a60;
+	display: block;
+	font-size: 90px;
+	font-weight: 700;
+	padding: 90px 0 20px;
+	text-transform: uppercase;
+}
+.intro h1,
+.intro h2 {
+	display: inline;
+	font-weight: 700;
+}
+.intro h1 span {
+	display: none;
 }
 
 .portfolio {

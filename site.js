@@ -39,4 +39,18 @@ $(document).ready(function($) {
 	var $mail = $(".contact ul li span");
 	var email = $mail.text() + '@gmail.com';
 	$mail.replaceWith('<a href="mailto:' + email + '">' + email + '</a>');
+
+	// http://css-tricks.com/snippets/jquery/smooth-scrolling/
+	$('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+				$('html,body').animate({
+					scrollTop: target.offset().top - 80
+				}, 800);
+				return false;
+			}
+		}
+	});
 });
