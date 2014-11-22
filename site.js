@@ -36,6 +36,11 @@ $(document).ready(function($) {
 		.setTween(tween)
 		.addTo(controller);
 
+	tween = TweenMax.staggerFrom(".skills .bubbles span", 2, {scale:2.5, opacity:0, delay:0.5}, 2);
+	new ScrollScene({offset: 900, duration: 1500})
+		.setTween(tween)
+		.addTo(controller);
+
 	var $mail = $(".contact ul li span");
 	var email = $mail.text() + '@gmail.com';
 	$mail.replaceWith('<a href="mailto:' + email + '">' + email + '</a>');
