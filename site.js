@@ -69,7 +69,8 @@ $(document).ready(function($) {
 		.setTween(tween)
 		.addTo(controller);
 
-	$(".navigation nav div > a").mouseover(function(){
-		TweenMax.staggerFrom(this, 0.8, {opacity:0, scale:0, y:80, rotationX:180, transformOrigin:"0% 50% -50",  ease:Back.easeOut}, 0.01, "+=0").restart();
-	});
+	tween = TweenMax.to(".contact", 1, {backgroundPosition: "0 -310px", ease: Linear.easeNone})
+	new ScrollScene({offset: 3150, duration: 400})
+		.setTween(tween)
+		.addTo(controller);
 });
