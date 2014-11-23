@@ -38,7 +38,7 @@ $(document).ready(function($) {
 
 	// portfolio image (item1)
 	tween = TweenMax.to(".item1 a:first-child", 1, {backgroundPosition: "0 -0px", ease: Linear.easeNone})
-	new ScrollScene({offset: 250, duration: 400})
+	new ScrollScene({offset: 150, duration: 400})
 		.setTween(tween)
 		.addTo(controller);
 
