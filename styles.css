@@ -50,6 +50,7 @@ table {
 body {
 	color: #fff;
 	font-family: 'Source Sans Pro', sans-serif;
+	-webkit-text-size-adjust: none;
 }
 #all {
 	background: #1d1d1d;
