@@ -21,7 +21,7 @@ $(document).ready(function($) {
 	var tween;
 
 	// menu
-	if( $(window).width() > 800 ) {
+	if(typeof window.orientation === 'undefined'){
 		new ScrollScene({offset: 0})
 			.setPin(".navigation nav")
 			.addTo(controller);
