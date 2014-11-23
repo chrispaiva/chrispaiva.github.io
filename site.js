@@ -32,7 +32,7 @@ $(document).ready(function($) {
 
 	// portfolio tags (item1)
 	tween = TweenMax.staggerFrom(".item1 ul li", 2, {scale:0.5, opacity:0, delay:0.5, ease:Elastic.easeOut, force3D:true}, 0.2);
-	new ScrollScene({offset: 100, duration: 700})
+	new ScrollScene({offset: 250, duration: 600})
 		.setTween(tween)
 		.addTo(controller);
 
@@ -44,7 +44,7 @@ $(document).ready(function($) {
 
 	// portfolio tags (item2)
 	tween = TweenMax.staggerFrom(".item2 ul li", 2, {scale:0.5, opacity:0, delay:0.5, ease:Elastic.easeOut, force3D:true}, 0.2);
-	new ScrollScene({offset: 400, duration: 700})
+	new ScrollScene({offset: 700, duration: 650})
 		.setTween(tween)
 		.addTo(controller);
 
@@ -61,31 +61,31 @@ $(document).ready(function($) {
 	*/
 
 	// skills header
-	new ScrollScene({offset: 1570, duration: 1050})
+	new ScrollScene({offset: 1650, duration: 1500})
 		.setPin(".skills h4", {pushFollowers: false})
 		.addTo(controller);
 
 	// skills bubbles image
 	tween = TweenMax.staggerFrom(".skills .bubbles li img", 10, {scale:0.3, opacity:0.8, delay:0.5, ease:Bounce.easeOut, force3D:true}, 10);
-	new ScrollScene({offset: 1100, duration: 1300})
+	new ScrollScene({offset: 1400, duration: 1500})
 		.setTween(tween)
 		.addTo(controller);
 
 	// skills bubbles text
 	tween = TweenMax.staggerFrom(".skills .bubbles li p", 10, {css:{alpha: 0.1}}, 10);
-	new ScrollScene({offset: 900, duration: 1500})
+	new ScrollScene({offset: 1400, duration: 1700})
 		.setTween(tween)
 		.addTo(controller);
 
 	// skills bubbles dots
 	tween = TweenMax.staggerFrom(".skills .bubbles span", 2, {scale:2.5, opacity:0, delay:0.5}, 2);
-	new ScrollScene({offset: 1100, duration: 1500})
+	new ScrollScene({offset: 1400, duration: 1700})
 		.setTween(tween)
 		.addTo(controller);
 
 	// contact background
-	tween = TweenMax.to(".contact", 1, {backgroundPosition: "0 -310px", ease: Linear.easeNone})
-	new ScrollScene({offset: 3150, duration: 400})
+	tween = TweenMax.to(".contact", 1, {backgroundPosition: "0 -1px", ease: Linear.easeNone})
+	new ScrollScene({offset: 3600, duration: 400})
 		.setTween(tween)
 		.addTo(controller);
 });
