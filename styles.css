@@ -48,9 +48,8 @@ table {
 }
 
 /* http://stackoverflow.com/questions/2594389/hide-html-horizontal-but-not-vertical-scrollbar */
-html, body {
+html {
 	overflow-y: scroll;
-	overflow-x: hidden;
 	position: relative;
 	width: 100%;
 }
@@ -61,6 +60,8 @@ html * {
 body {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
+	position: relative;
 }
 #all {
 	background: #1d1d1d;
