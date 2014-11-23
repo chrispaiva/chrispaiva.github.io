@@ -83,9 +83,12 @@ $(document).ready(function($) {
 		.setTween(tween)
 		.addTo(controller);
 
-	// contact background
-	tween = TweenMax.to(".contact", 1, {backgroundPosition: "0 -1px", ease: Linear.easeNone})
-	new ScrollScene({offset: 3650, duration: 350})
-		.setTween(tween)
-		.addTo(controller);
+	// fix this later
+	if( navigator.userAgent.indexOf("Trident/") === -1 ) {
+		// contact background
+		tween = TweenMax.to(".contact", 1, {backgroundPosition: "0 -1px", ease: Linear.easeNone})
+		new ScrollScene({offset: 3700, duration: 350})
+			.setTween(tween)
+			.addTo(controller);
+	}
 });
