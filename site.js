@@ -17,15 +17,18 @@ $(document).ready(function($) {
 		}
 	});
 
+	// no animation for mobile devices
+	if(typeof window.orientation !== 'undefined'){
+		return;
+	}
+
 	var controller = new ScrollMagic();
 	var tween;
 
 	// menu
-	if(typeof window.orientation === 'undefined'){
-		new ScrollScene({offset: 0})
-			.setPin(".navigation nav")
-			.addTo(controller);
-	}
+	new ScrollScene({offset: 0})
+		.setPin(".navigation nav")
+		.addTo(controller);
 
 	// portfolio tags (item1)
 	tween = TweenMax.staggerFrom(".item1 ul li", 2, {scale:0.5, opacity:0, delay:0.5, ease:Elastic.easeOut, force3D:true}, 0.2);
