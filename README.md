@@ -1,4 +1,4 @@
 chrispaiva.github.io
 ====================
 
-This is my repo.
+This is my repository.
