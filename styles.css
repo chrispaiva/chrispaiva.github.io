@@ -47,7 +47,7 @@ table {
 	border-spacing: 0;
 }
 
-html {
+html * {
 	/* http://stackoverflow.com/questions/11289166/chrome-on-android-resizes-font */
 	max-height: 1000000px;
 }
