@@ -38,7 +38,7 @@ $(document).ready(function($) {
 
 	// portfolio image (item1)
 	tween = TweenMax.to(".item1 a:first-child", 1, {backgroundPosition: "0 -0px", ease: Linear.easeNone})
-	new ScrollScene({offset: 150, duration: 400})
+	new ScrollScene({offset: 300, duration: 200})
 		.setTween(tween)
 		.addTo(controller);
 
@@ -50,7 +50,7 @@ $(document).ready(function($) {
 
 	// portfolio image (item2)
 	tween = TweenMax.to(".item2 a:first-child", 1, {backgroundPosition: "0 -0px", ease: Linear.easeNone})
-	new ScrollScene({offset: 550, duration: 300})
+	new ScrollScene({offset: 800, duration: 200})
 		.setTween(tween)
 		.addTo(controller);
 
@@ -83,9 +83,12 @@ $(document).ready(function($) {
 		.setTween(tween)
 		.addTo(controller);
 
-	// contact background
-	tween = TweenMax.to(".contact", 1, {backgroundPosition: "0 -1px", ease: Linear.easeNone})
-	new ScrollScene({offset: 3600, duration: 400})
-		.setTween(tween)
-		.addTo(controller);
+	// fix this later
+	if( navigator.userAgent.indexOf("Trident/") === -1 ) {
+		// contact background
+		tween = TweenMax.to(".contact", 1, {backgroundPosition: "0 -1px", ease: Linear.easeNone})
+		new ScrollScene({offset: 3700, duration: 350})
+			.setTween(tween)
+			.addTo(controller);
+	}
 });
