@@ -21,9 +21,11 @@ $(document).ready(function($) {
 	var tween;
 
 	// menu
-	new ScrollScene({offset: 0})
-		.setPin(".navigation nav")
-		.addTo(controller);
+	if( $(window).width() > 800 ) {
+		new ScrollScene({offset: 0})
+			.setPin(".navigation nav")
+			.addTo(controller);
+	}
 
 	// portfolio tags (item1)
 	tween = TweenMax.staggerFrom(".item1 ul li", 2, {scale:0.5, opacity:0, delay:0.5, ease:Elastic.easeOut, force3D:true}, 0.2);
