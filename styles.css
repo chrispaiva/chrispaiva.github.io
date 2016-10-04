@@ -172,12 +172,17 @@ body {
 	text-transform: uppercase;
 }
 .intro h1,
-.intro h2 {
+.intro h2,
+.intro h3 {
 	display: inline;
 	font-weight: 700;
 }
 .intro h1 span {
 	display: none;
+}
+.intro em {
+	color: #666;
+	font-style: normal;
 }
 
 .portfolio {

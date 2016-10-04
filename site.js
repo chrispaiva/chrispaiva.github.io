@@ -54,6 +54,30 @@ $(document).ready(function($) {
 		.setTween(tween)
 		.addTo(controller);
 
+	// portfolio tags (item3)
+	tween = TweenMax.staggerFrom(".item3 ul li", 2, {scale:0.5, opacity:0, delay:0.5, ease:Elastic.easeOut, force3D:true}, 0.2);
+	new ScrollScene({offset: 1150, duration: 650})
+		.setTween(tween)
+		.addTo(controller);
+
+	// portfolio image (item3)
+	tween = TweenMax.to(".item3 a:first-child", 1, {backgroundPosition: "0 -0px", ease: Linear.easeNone})
+	new ScrollScene({offset: 1250, duration: 200})
+		.setTween(tween)
+		.addTo(controller);
+
+	// portfolio tags (item4)
+	tween = TweenMax.staggerFrom(".item4 ul li", 2, {scale:0.5, opacity:0, delay:0.5, ease:Elastic.easeOut, force3D:true}, 0.2);
+	new ScrollScene({offset: 1550, duration: 650})
+		.setTween(tween)
+		.addTo(controller);
+
+	// portfolio image (item4)
+	tween = TweenMax.to(".item4 a:first-child", 1, {backgroundPosition: "0 -0px", ease: Linear.easeNone})
+	new ScrollScene({offset: 1650, duration: 200})
+		.setTween(tween)
+		.addTo(controller);
+
 	/*
 	new ScrollScene({offset: 1330, duration: 1070})
 		.setPin(".skills .section-header", {pushFollowers: false})
@@ -61,25 +85,25 @@ $(document).ready(function($) {
 	*/
 
 	// skills header
-	new ScrollScene({offset: 1650, duration: 1500})
+	new ScrollScene({offset: 2300, duration: 1500})
 		.setPin(".skills h4", {pushFollowers: false})
 		.addTo(controller);
 
 	// skills bubbles image
 	tween = TweenMax.staggerFrom(".skills .bubbles li img", 10, {scale:0.3, opacity:0.8, delay:0.5, ease:Bounce.easeOut, force3D:true}, 10);
-	new ScrollScene({offset: 1400, duration: 1500})
+	new ScrollScene({offset: 2000, duration: 1500})
 		.setTween(tween)
 		.addTo(controller);
 
 	// skills bubbles text
 	tween = TweenMax.staggerFrom(".skills .bubbles li p", 10, {css:{alpha: 0.1}}, 10);
-	new ScrollScene({offset: 1400, duration: 1700})
+	new ScrollScene({offset: 2100, duration: 1700})
 		.setTween(tween)
 		.addTo(controller);
 
 	// skills bubbles dots
 	tween = TweenMax.staggerFrom(".skills .bubbles span", 2, {scale:2.5, opacity:0, delay:0.5}, 2);
-	new ScrollScene({offset: 1400, duration: 1700})
+	new ScrollScene({offset: 2050, duration: 1700})
 		.setTween(tween)
 		.addTo(controller);
 
@@ -87,7 +111,7 @@ $(document).ready(function($) {
 	if( navigator.userAgent.indexOf("Trident/") === -1 ) {
 		// contact background
 		tween = TweenMax.to(".contact", 1, {backgroundPosition: "0 -1px", ease: Linear.easeNone})
-		new ScrollScene({offset: 3700, duration: 350})
+		new ScrollScene({offset: 4400, duration: 350})
 			.setTween(tween)
 			.addTo(controller);
 	}
