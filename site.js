@@ -18,7 +18,7 @@ $(document).ready(function($) {
 	});
 
 	// no animation for mobile devices
-	if(typeof window.orientation !== 'undefined'){
+	if (typeof window.orientation !== 'undefined') {
 		return;
 	}
 

@@ -482,3 +482,147 @@ body {
 	padding: 10px;
 	text-align: center;
 }
+
+@media(max-width: 960px) {
+	.navigation nav div {
+		height: auto;
+		overflow: hidden;
+		width: 100%;
+	}
+	.navigation nav div > a {
+		margin: 0 0 0 15px;
+	}
+	.navigation nav ul {
+		float: left;
+		width: 100%;
+	}
+	.navigation nav ul a {
+		line-height: 2;
+		padding: 0 15px 10px;
+	}
+	.intro > div {
+		font-size: 36px;
+		height: 400px;
+		line-height: 1.15;
+		padding-left: 15px;
+		width: auto;
+	}
+	.intro > div:before {
+		background-position: calc(100% + 50px) 0;
+		background-size: auto 400px;
+		height: 400px;
+		margin-right: 0;
+		padding-right: 0;
+		width: 100%;
+	}
+	.intro strong {
+		font-size: 62px;
+		padding-top: 40px;
+	}
+	.intro h3 .country {
+		display: none;
+	}
+
+	.portfolio {
+		margin: 25px 15px 10px;
+		padding: 0;
+		width: auto;
+	}
+	.portfolio .item {
+		border-bottom: 1px dashed #fff;
+		margin-bottom: 20px;
+		padding: 30px 15px 20px; 
+	}
+	.portfolio .item:last-child {
+		border-bottom-width: 0;
+		margin-bottom: 0;
+	}
+	.portfolio .item a:first-child {
+		height: 150px;
+		margin-bottom: 20px;
+		max-width: 350px;
+		width: 45%;
+	}
+	.portfolio .item p {
+		padding-right: 0;
+	}
+	.portfolio .item .download {
+		text-decoration: underline;
+	}
+	.portfolio .item h4 span {
+		display: block;
+	}
+
+	.skills > div {
+		margin: 10px 15px 10px;
+		padding: 0;
+		width: auto;
+	}
+	.skills h4 {
+		position: static;
+		text-align: center;
+		width: auto;
+	}
+	.skills .bubbles {
+		padding-left: 0;
+	}
+	.skills .bubbles img {
+		display: block;
+		float: none;
+		margin: 15px auto;
+	}
+	.skills .bubbles p {
+		padding: 0;
+		text-align: center;
+	}
+	.skills .bubbles p strong {
+		padding-top: 0;
+	}
+	.skills .bubbles span {
+		display: block;
+		margin: 0 auto;
+		width: 15px;
+	}
+
+	.about {
+		padding-bottom: 25px;
+	}
+	.about > div {
+		margin: 10px 15px 10px;
+		padding: 0;
+		width: auto;
+	}
+	.about ul li {
+		padding-bottom: 10px;
+	}
+	.about img {
+		height: 200px;
+		margin: 0 10px 0 25px;
+	}
+
+	.contact {
+		padding-top: 20px;
+	}
+	.contact > div {
+		margin: 10px 15px 10px;
+		padding: 0;
+		width: auto;
+	}
+	.contact .find {
+		font-size: 36px;
+	}
+	.contact .section-header {
+		background: none;
+		border-bottom: 1px dotted #fff;
+		padding-bottom: 10px;
+	}
+	.contact ul li:nth-child(3) {
+		text-align: center;
+	}
+}
+
+@media(max-width: 600px) {
+	.intro > div:before {
+		background-position: calc(100% + 200px) 0;
+	}
+}
