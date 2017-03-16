@@ -538,6 +538,7 @@ body {
 		margin-bottom: 0;
 	}
 	.portfolio .item a:first-child {
+		background-position: 0 0;
 		height: 150px;
 		margin-bottom: 20px;
 		max-width: 350px;
@@ -559,6 +560,7 @@ body {
 		width: auto;
 	}
 	.skills h4 {
+		padding: 0;
 		position: static;
 		text-align: center;
 		width: auto;
@@ -624,5 +626,27 @@ body {
 @media(max-width: 600px) {
 	.intro > div:before {
 		background-position: calc(100% + 200px) 0;
+	}
+}
+
+@media(max-width: 450px) {
+	.intro > div:before {
+		background-position: calc(100% + 250px) 0;
+	}
+	.navigation nav ul a {
+		font-size: 13px;
+		padding: 0 13px 10px;
+	}
+	.intro strong {
+		font-size: 48px;
+		padding-top: 60px;
+	}
+	.intro > div {
+		font-size: 30px;
+	}
+	.about img {
+		display: block;
+		float: none;
+		margin: 0 auto 20px;
 	}
 }
